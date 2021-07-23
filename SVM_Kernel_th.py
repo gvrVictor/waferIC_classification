@@ -79,7 +79,7 @@ def get_contour_verts(cn):
 # Get dataset, encoding of the categorical quantity,
 # scaling of the independent variable
 # =============================================================================
-dataset=pd.read_csv('G:/01_Projects/M4997xx/12_Test_Data/21_FE/analysis_S1_full_wafer_esquare/RU728087/data/wafer_11_RU728087.csv')
+dataset=pd.read_csv('./your_dataset.csv')                 #add your dataset path here   
 from sklearn import preprocessing
 lab_enc = preprocessing.LabelEncoder()
 dataset.iloc[:,3] = lab_enc.fit_transform(dataset.iloc[:,3].values)
